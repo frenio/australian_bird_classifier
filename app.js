@@ -1,6 +1,6 @@
 import { client } from "@gradio/client";
 
-const response_0 = await fetch("https://raw.githubusercontent.com/gradio-app/gradio/main/test/test_files/bus.png");
+const response_0 = await fetch("https://frenio-australian-bird-classifier.hf.space/file=/home/user/app/red_crimson_rosella.jpg");
 const exampleImage = await response_0.blob();
 						
 const app = await client("https://frenio-australian-bird-classifier.hf.space/");
