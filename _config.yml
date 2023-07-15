@@ -1,9 +1,0 @@
-remote_theme: daattali/beautiful-jekyll@main
-plugins:
-- jekyll-remote-theme
-
-title: australian bird classifier
-description: Differenciate between a crimson rosella, rainbow lorikeet, and galah.
-
-author:
-  name: Frenio Redeker
