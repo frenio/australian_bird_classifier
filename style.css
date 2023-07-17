@@ -12,19 +12,9 @@ body {
     color: #333;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #ffffff;
-    font-family: Arial, sans-serif;
-}
-
 #exampleImages img {
     cursor: pointer;
-    margin-right: 15px;
+    margin-right: 6px;
   }
 
 #exampleImages img:last-child {
@@ -119,6 +109,13 @@ nav li {
 
 /* Main styles */
 main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 20px;
