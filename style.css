@@ -24,6 +24,11 @@ main {
 
 #exampleImages img {
     cursor: pointer;
+    margin-right: 15px;
+  }
+
+#exampleImages img:last-child {
+    margin-right: 0;
   }
 
 .image-upload-placeholder {
