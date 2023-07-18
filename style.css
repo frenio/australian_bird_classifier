@@ -33,7 +33,7 @@ body {
 }
 
 a {
-    color: #333;
+    color: #2E5984;
     text-decoration: none;
 }
 
@@ -56,6 +56,11 @@ header {
     padding: 20px;
     padding-top: 5rem;
     text-align: center;
+}
+
+header a {
+    color: #000000;
+    text-decoration: none;
 }
 
 /* header div img {
@@ -112,13 +117,31 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #ffffff;
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 50px 20px;
+}
+
+.center-div {
+    width: 90%;  /* This can be any width you choose. */
+    margin: auto;
+    text-align: justify;
+}
+
+.center-div-credits {
+    width: 90%;  /* This can be any width you choose. */
+    margin: auto;
+    text-align: justify;
+}
+
+.input {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 section {

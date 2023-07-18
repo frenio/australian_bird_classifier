@@ -33,18 +33,23 @@
 	<main>
 		<section>
 			<h2 id="model" style="text-align: center;">Australian Bird Classifier</h2>
-			<p style="text-align: center;">
-				This image classification model was trained using the fastai python library and images found on DuckDuckGo. It can distinguish between crimson rosellas, rainbow lorikeets, and galahs. 
-				Try it by clicking the example images or upload your own image file.
-			</p>
+			<div class='center-div'>
+                                <p>This image classification model is based on a pretrained resnet18 model and was fine-tuned to distinguish between crimson rosellas, rainbow lorikeets, and galahs. Fine-tuning was done using the fastai library and images found on DuckDuckGo. The model is hosted on <a href='https://huggingface.co/spaces/frenio/australian_bird_classifier'>HuggingFace Spaces</a> and accessed via the Gradio API. Try the model by clicking the example images below or upload your own image file.</p>
+                        </div>
 			<div id="exampleImages" style="text-align: center;">
 			    <img src="https://frenio-australian-bird-classifier.hf.space/file=rainbow_lorikeets.jpg" id="example1" width="96"><!--
 			 --><img src="https://frenio-australian-bird-classifier.hf.space/file=red_crimson_rosella.jpg" id="example2" width="96"><!--
 			 --><img src="https://frenio-australian-bird-classifier.hf.space/file=flying_galah.jpg" id="example3" width="96">
 			</div>
                         <div id="results" style="text-align: center;"></div>
-                        <div style="text-align: center;">
+                        <div class='input'>
                                 <input type="file" id="imageUpload" accept="image/*">
+                        </div>
+                        <div class='center-div-credits'>
+                                <h3>Example Image Credits</h3>
+                                <ul><p><b>rainbow_lorikeets.jpg:</b> Photo by John, downloaded from Flikr under the CC BY-SA 2.0 license, url: <a href='https://www.flickr.com/photos/shebalso/49822636253/'>https://www.flickr.com/photos/shebalso/49822636253/</a>.</p></ul>
+                                <ul><p><b>red_crimson_rosella.jpg:</b> Photo by Gavin Tapp, downloaded from Flikr under the CC BY 2.0 license, url: <a href='https://www.flickr.com/photos/gavintapp/4489522318/'>https://www.flickr.com/photos/gavintapp/4489522318/</a>.</p></ul>
+                                <ul><p><b>galah.jpg:</b> Photo by Dorothy Jenkins, downloaded from Flikr under the CC BY-SA 2.0 license, url: <a href='https://www.flickr.com/photos/friendsintheair/51956035776/'>https://www.flickr.com/photos/friendsintheair/51956035776/</a>.</p></ul>
                         </div>
 		</section>
 		<script src='script.js'></script>
@@ -59,7 +64,7 @@
                         <a href="https://twitter.com/faredeker" target="_blank" rel="noopener"><i class="fab fa-fw fa-twitter"></i></a>
                         <a href="https://linkedin.com/in/fredeker"  target="_blank" rel="noopener"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a href="https://scholar.google.com/citations?user=-pvktD0AAAAJ"  target="_blank" rel="noopener"><i class="fas fa-fw fa-graduation-cap"></i>
-                        <a href="https://github.com/frenio"  target="_blank" rel="noopener"><i class="fab fa-fw fa-github"></i>
+                        <a href="https://github.com/frenio"  target="_blank" rel="noopener"><i class="fab fa-fw fa-github"></i></a>
                 </div>
                 <p>&copy; 2023 Frenio Redeker</p>
         </footer>
