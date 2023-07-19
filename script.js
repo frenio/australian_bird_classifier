@@ -66,7 +66,30 @@ async function predict(base64data) {
 		label3 = label3.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 		const confidence3 = (Math.round(json['data'][0]['confidences'][2]['confidence'] * 100) / 100).toFixed(2);
 		
-		document.getElementById('results').innerHTML = `<br/><img src="${base64data}" width="300"> <p>${label1}: ${confidence1}</p> <p>${label2}: ${confidence2}</p> <p>${label3}: ${confidence3}</p>`;
+		document.getElementById('results').innerHTML =`
+                    <br/>
+                    <div class='results'>
+				    	<img src="${base64data}" width="300">
+				    </div>
+				    <table class='results'>
+				        <tr>
+				            <th class='label-cell'>Label</th>
+				            <th class='label-cell'>Confidence</th>
+				        </tr>
+				        <tr>
+				            <td>${label1}</td>
+				            <td class="confidence-cell">${confidence1}</td>
+				        </tr>
+				        <tr>
+				            <td>${label2}</td>
+				            <td class="confidence-cell">${confidence2}</td>
+				        </tr>
+				        <tr>
+				            <td>${label3}</td>
+				            <td class="confidence-cell">${confidence3}</td>
+				        </tr>
+				    </table>
+				`;
 
 	} catch (error) {
 

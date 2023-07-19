@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
 }
 
 /* Header styles */
@@ -142,6 +142,28 @@ main {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
+}
+
+.confidence-cell {
+    text-align: right;
+}
+
+.label-cell {
+    text-align: left;
+}
+
+td, th {
+    padding-right: 20px;  /* Adjust as needed */
+}
+
+td:last-child, th:last-child {
+    padding-right: 0px;  /* Adjust as needed */
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 section {
