@@ -15,18 +15,18 @@ document.addEventListener('DOMContentLoaded', function() {
 		reader.readAsDataURL(this.files[0]);
     });
 
-	fetchImageAndPredict('https://frenio-australian-bird-classifier.hf.space/file=rainbow_lorikeets.jpg');
+	fetchImageAndPredict('example_images/rainbow_lorikeets.jpg');
 
 	document.getElementById('example1').addEventListener('click', function() {
-	  fetchImageAndPredict('https://frenio-australian-bird-classifier.hf.space/file=rainbow_lorikeets.jpg');
+	  fetchImageAndPredict('example_images/rainbow_lorikeets.jpg');
 	});	    
 
 	document.getElementById('example2').addEventListener('click', function() {
-	  fetchImageAndPredict('https://frenio-australian-bird-classifier.hf.space/file=red_crimson_rosella.jpg');
+	  fetchImageAndPredict('example_images/red_crimson_rosella.jpg');
 	});
 
 	document.getElementById('example3').addEventListener('click', function() {
-	  fetchImageAndPredict('https://frenio-australian-bird-classifier.hf.space/file=flying_galah.jpg');
+	  fetchImageAndPredict('example_imgaes/flying_galah.jpg');
 	});	    
 
 });
