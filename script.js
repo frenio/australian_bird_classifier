@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	});
 
 	document.getElementById('example3').addEventListener('click', function() {
-	  fetchImageAndPredict('example_imgaes/flying_galah.jpg');
+	  fetchImageAndPredict('example_images/flying_galah.jpg');
 	});	    
 
 });
