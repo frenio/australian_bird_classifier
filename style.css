@@ -200,12 +200,20 @@ footer {
         text-align: center;
     }
 
+    main {
+    padding: 2rem;
+    }
+
     nav ul {
         flex-direction: column;
     }
 
     nav li {
         margin: 10px 0;
+    }
+
+    section {
+    margin-bottom: .5rem;
     }
 
     .image-container {
@@ -220,13 +228,13 @@ footer {
     }
 
     .center-div {
-      width: 90%;  /* This can be any width you choose. */
+      width: 100%;  /* This can be any width you choose. */
       margin: auto;
       text-align: justify;
     }
 
     .center-div-credits {
-      width: 90%;  /* This can be any width you choose. */
+      width: 100%;  /* This can be any width you choose. */
       margin: auto;
       text-align: justify;
     }
