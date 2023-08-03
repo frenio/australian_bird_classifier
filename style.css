@@ -111,13 +111,13 @@ main {
 }
 
 .center-div {
-    width: 60%;  /* This can be any width you choose. */
+    width: 50%;  /* This can be any width you choose. */
     margin: auto;
     text-align: justify;
 }
 
 .center-div-credits {
-    width: 60%;  /* This can be any width you choose. */
+    width: 50%;  /* This can be any width you choose. */
     margin: auto;
     text-align: justify;
 }
