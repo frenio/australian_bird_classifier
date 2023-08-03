@@ -67,29 +67,28 @@ async function predict(base64data) {
 		const confidence3 = (Math.round(json['data'][0]['confidences'][2]['confidence'] * 100) / 100).toFixed(2);
 		
 		document.getElementById('results').innerHTML =`
-                    <br/>
-                    <div class='results'>
-				    	<img src="${base64data}" width="300">
-				    </div>
-				    <table class='results'>
-				        <tr>
-				            <th class='label-cell'>Label</th>
-				            <th class='label-cell'>Confidence</th>
-				        </tr>
-				        <tr>
-				            <td>${label1}</td>
-				            <td class="confidence-cell">${confidence1}</td>
-				        </tr>
-				        <tr>
-				            <td>${label2}</td>
-				            <td class="confidence-cell">${confidence2}</td>
-				        </tr>
-				        <tr>
-				            <td>${label3}</td>
-				            <td class="confidence-cell">${confidence3}</td>
-				        </tr>
-				    </table>
-				`;
+			<div class='results'>
+				<img src="${base64data}" width="300">
+			</div>
+			<table class='results'>
+				<tr>
+					<th class='label-cell'>Label</th>
+					<th class='label-cell'>Confidence</th>
+				</tr>
+				<tr>
+					<td>${label1}</td>
+					<td class="confidence-cell">${confidence1}</td>
+				</tr>
+				<tr>
+				        <td>${label2}</td>
+				        <td class="confidence-cell">${confidence2}</td>
+				</tr>
+				<tr>
+				        <td>${label3}</td>
+				        <td class="confidence-cell">${confidence3}</td>
+				</tr>
+			</table>
+   		`;
 
 	} catch (error) {
 
